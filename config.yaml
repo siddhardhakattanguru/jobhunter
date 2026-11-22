@@ -1,0 +1,31 @@
+# What to search for and how picky to be.
+searches:
+  - query: "backend engineer aws"
+    where: "Pune"
+  - query: "golang developer"
+    where: "Pune"
+  - query: "aws lambda engineer"
+    where: "India"
+
+remote_queries:          # Remotive (remote roles worldwide)
+  - "golang"
+  - "aws"
+  - "backend"
+
+exclude_title_keywords:  # skip obviously wrong roles before spending API calls
+  - "intern"
+  - "frontend"
+  - "ios"
+  - "android"
+  - "data entry"
+
+preferences: |
+  Target: senior backend / cloud engineer roles.
+  Strong fit: AWS-based distributed systems ownership, Go or Java backend,
+  event-driven architectures, product-focused or fast-moving teams.
+  Must pay meaningfully more than current (target in-hand Rs 1.5-2 lakh/month).
+  Open to Pune on-site/hybrid or remote.
+
+max_jobs_per_run: 40        # cap on jobs scored per run (controls API cost)
+min_score_to_tailor: 70     # 0-100; only draft application material above this
+max_tailored_per_run: 8
